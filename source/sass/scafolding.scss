@@ -40,14 +40,28 @@ img {
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-.main-content {
-  background-color: rgb(242,245,250);
+.button {
+  padding: 18px 43px;
+  font-family: $secondary-fonts;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  background-color: $main-blue-color;
+  border-radius: 5px;
 }
 
 //Описываем контейнер
