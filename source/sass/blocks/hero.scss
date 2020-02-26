@@ -2,13 +2,9 @@
   padding: 218px 15px 275px;
   position: relative;
 
-  background-image: url(../img/plate-1x.png);
-  background-repeat: no-repeat;
-  background-position: left 40% bottom;
-
   &::after {
     content: "";
-    z-index: -1;
+    z-index: -2;
     position: absolute;
     top: -100px;
     left: 0;
@@ -21,10 +17,26 @@
     background-position: center;
     background-size: cover;
   }
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 775px;
+
+    background-color: transparent;
+    background-image: url(../img/triangle-double.svg), url(../img/plates-1x.png);
+    background-repeat: no-repeat;
+    background-position: left 65% top 20px, left 66% top 160px;
+  }
 }
 
 .hero__heading {
   @include reset;
+  position: relative;
   margin-left: 8px;
 
   font-family: "Roboto Condensed", sans-serif;
@@ -35,6 +47,40 @@
   color: #ffffff;
 
   text-transform: uppercase;
+
+  // &::after {
+  //   content: "";
+
+  //   position: absolute;
+  //   z-index: -1;
+  //   width: 100%;
+  //   height: 641px;
+
+  //   top: -200px;
+  //   left: 0;
+
+  //   background-color: transparent;
+  //   background-image: url(../img/triangle-double.svg);
+  //   background-repeat: no-repeat;
+  //   background-position: right -40px center;
+  // }
+
+  // &::before {
+  //   content: "";
+
+  //   position: absolute;
+  //   z-index: -1;
+  //   width: 100%;
+  //   height: 515px;
+
+  //   top: -60px;
+  //   left: 0;
+
+  //   background-color: transparent;
+  //   background-image: url(../img/plates-1x.png);
+  //   background-repeat: no-repeat;
+  //   background-position: right -85px center;
+  // }
 }
 
 .hero__description {
