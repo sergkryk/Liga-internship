@@ -1,5 +1,5 @@
 .advantages {
-  margin-top: 111px;
+  padding-top: 111px;
   width: 100%;
 
   display: flex;
@@ -23,7 +23,7 @@
 
   min-height: 299px;
 
-  flex-basis: 48.5%;
+  flex: 0 0 48.5%;
 
   border: 1px solid #ebebeb;
   border-left: 2px solid $main-blue-color;
@@ -36,82 +36,40 @@
 
 .advantages__item--terms {
   background-image: url(../img/icons/stopwatch.svg);
-
-  // &::after {
-  //   content: "";
-
-  //   position: absolute;
-  //   z-index: -1;
-  //   width: 340px;
-  //   height: 330px;
-
-  //   top: -70px;
-  //   left: -175px;
-
-  //   background-color: transparent;
-  //   background-image: url(../img/triangle-small.svg);
-
-  //   transform: rotate(180deg);
-  // }
 }
 
 .advantages__item--suppliers {
   background-image: url(../img/icons/hired.svg);
-
-  // &::after {
-  //   content: "";
-
-  //   position: absolute;
-  //   z-index: -1;
-  //   width: 822px;
-  //   height: 873px;
-
-  //   top: 31px;
-  //   left: -420px;
-
-  //   background-color: transparent;
-  //   background-image: url(../img/triangle-big.svg);
-
-  //   transform: rotate(180deg);
-  // }
 }
 
 .advantages__item--privacy {
   background-image: url(../img/icons/detective.svg);
-
-  // &::after {
-  //   content: "";
-
-  //   position: absolute;
-  //   z-index: -1;
-  //   width: 822px;
-  //   height: 873px;
-
-  //   top: 0;
-  //   left: -618px;
-
-  //   background-color: transparent;
-  //   background-image: url(../img/triangle-big.svg);
-  // }
 }
 
 .advantages__item--pricing {
   background-image: url(../img/icons/tag.svg);
+}
 
-  // &::after {
-  //   content: "";
+.advantages__item--about {
+  border: none;
+  flex-basis: 100%;
+  padding: 75px 0 0 183px;
+  position: relative;
 
-  //   position: absolute;
-  //   z-index: -1;
-  //   width: 340px;
-  //   height: 330px;
+  &::before {
+    content: "";
 
-  //   top: -50px;
-  //   right: -350px;
+    position: absolute;
+    width: 220px;
+    height: 317px;
 
-  //   background-color: transparent;
-  //   background-image: url(../img/triangle-small.svg);
-  // }
+    bottom: -15px;
+    left: -27px;
+
+    background-color: transparent;
+    background-image: url(../img/2005.png);
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__sub-heading {
@@ -124,8 +82,24 @@
   line-height: 34px;
 }
 
+.advantages__sub-heading--about {
+  margin-bottom: 21px;
+  font-size: 36px;
+  line-height: 51px;
+  color: $main-color-text;
+}
+
 .advantages__text {
   @include reset;
   font-size: 16px;
   line-height: 22px;
+}
+
+.advantages__text--about {
+  padding-bottom: 23px;
+}
+
+.advantages__button {
+  margin-top: 19px;
+  padding: 12px 50px;
 }

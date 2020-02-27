@@ -47,23 +47,6 @@ html {
   box-sizing: inherit;
 }
 
-.button {
-  padding: 18px 43px;
-  font-family: $secondary-fonts;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 1px;
-
-  text-transform: uppercase;
-  text-align: center;
-
-  color: #FFFFFF;
-
-  background-color: $main-blue-color;
-  border-radius: 5px;
-}
-
 //Описываем контейнер
 
 .container {
@@ -79,7 +62,33 @@ html {
 
 @media (min-width: $desktop-width) {
   .container {
+    padding: 0 90px;
     min-width: $desktop-width;
     max-width: $max-desktop-width;
   }
+}
+
+// Повторяющиеся элементы на странице
+
+.button {
+  font-family: $secondary-fonts;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  text-transform: uppercase;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+
+  background-color: transparent;
+}
+
+.button--blue {
+  border: 1px solid $main-blue-color;
+  color: $main-blue-color;
 }
