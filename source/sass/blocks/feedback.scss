@@ -1,5 +1,6 @@
 .feedback {
   padding-top: 90px;
+  padding-bottom: 70px;
   background-color: $main-blue-color;
 }
 
@@ -7,6 +8,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  background-image: url(../img/paper-airplane-1x.png);
+  background-repeat: no-repeat;
+  background-position: left 196px top 68px;
 }
 
 .feedback__heading {

@@ -1,0 +1,113 @@
+.site-footer {
+  padding-bottom: 20px;
+}
+.site-footer__wrapper {
+  padding: 63px 10px 76px 100px;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.site-footer__container--social {
+  margin-right: 14%;
+}
+
+.site-footer__container--menu {
+  margin-right: 23.2%;
+}
+
+.site-footer__logo {
+  margin-bottom: 50px;
+}
+
+.site-footer__socials {
+  @include reset-list;
+  display: flex;
+}
+
+.site-footer__social-link {
+  margin-right: 15px;
+  width: 26px;
+  height: 26px;
+
+  border-radius: 50%;
+  background-image: url(../img/icons/vk-logo.svg);
+}
+
+.site-footer__social-link--vk {
+  background-image: url(../img/icons/vk-logo.svg);
+}
+
+.site-footer__social-link--fb {
+  background-image: url(../img/icons/fb-logo.svg);
+}
+
+.site-footer__social-link--ok {
+  background-image: url(../img/icons/ok-logo.svg);
+}
+
+.site-footer__heading {
+  @include reset;
+  margin-bottom: 27px;
+
+  font-family: $secondary-fonts;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.site-footer__menu {
+  @include reset-list;
+  max-height: 115px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.site-footer__menu-item {
+  margin-right: 75px;
+}
+
+.site-footer__link {
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1B2D37;
+  opacity: 0.5;
+}
+
+.site-footer__address {
+  @include reset-list;
+}
+
+.site-footer__text {
+  @include reset;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1B2D37;
+  opacity: 0.5;
+}
+
+.site-footer__copyright {
+  @include reset-list;
+  margin: 0 auto;
+  padding: 0 100px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.site-footer__copyright-item {
+
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #1B2D37;
+
+  opacity: 0.5;
+}
