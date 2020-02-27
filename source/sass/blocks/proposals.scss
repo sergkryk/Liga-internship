@@ -1,0 +1,76 @@
+.proposals {
+  padding-top: 90px;
+  padding-bottom: 120px;
+  background-color: $main-color-background;
+}
+
+.proposals__heading {
+  @include reset;
+
+  margin-left: 132px;
+
+  font-family: $secondary-fonts;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #FFFFFF;
+}
+
+.proposals__list {
+  @include reset-list;
+
+  max-width: 1170px;
+
+  margin-left: 132px;
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.proposals__item {
+  margin-bottom: 10px;
+  flex: 0 0 370px;
+}
+
+.proposals__card {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  width: 100%;
+  padding: 50px 160px 510px 44px;
+
+  font-family: $secondary-fonts;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 63px;
+    height: 63px;
+
+    bottom: 0;
+    right: 0;
+
+    background-color: $main-blue-color;
+    background-image: url(../img/arrow-right.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.proposals__card--production {
+  background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/production-1x.jpg);
+}
+.proposals__card--installing {
+  background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/installing-1x.jpg);
+}
+.proposals__card--equipment {
+  background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-1x.jpg);
+}
