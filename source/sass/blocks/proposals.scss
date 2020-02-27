@@ -4,10 +4,14 @@
   background-color: $main-color-background;
 }
 
+.proposals__wrapper {
+  padding-left: 222px;
+  padding-right: 200px;
+}
+
 .proposals__heading {
   @include reset;
-
-  margin-left: 132px;
+  margin-bottom: 50px;
 
   font-family: $secondary-fonts;
   font-weight: 400;
@@ -20,9 +24,6 @@
   @include reset-list;
 
   max-width: 1170px;
-
-  margin-left: 132px;
-  margin-top: 50px;
 
   display: flex;
   justify-content: space-between;

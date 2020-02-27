@@ -1,25 +1,23 @@
 .advantages {
   padding-top: 111px;
-  padding-bottom: 82px;
+  padding-bottom: 112px;
   width: 100%;
 
   display: flex;
   justify-content: center;
 }
 
-.advantages__list {
-  @include reset-list;
-  margin-left: 10px;
-  max-width: 1170px;
+.advantages__container {
+  padding-left: 221px;
+  padding-right: 200px;
 
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.advantages__item {
+.advantages__card {
   margin-bottom: 30px;
-  padding: 96px 40px 65px 44px;
+  padding: 95px 40px 65px 44px;
   position: relative;
 
   min-height: 299px;
@@ -33,25 +31,33 @@
   background-repeat: no-repeat;
   background-position: left 43px top 40px;
 
+  &:nth-child(odd) {
+    margin-right: 28px;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+
 }
 
-.advantages__item--terms {
+.advantages__card--terms {
   background-image: url(../img/icons/stopwatch.svg);
 }
 
-.advantages__item--suppliers {
+.advantages__card--suppliers {
   background-image: url(../img/icons/hired.svg);
 }
 
-.advantages__item--privacy {
+.advantages__card--privacy {
   background-image: url(../img/icons/detective.svg);
 }
 
-.advantages__item--pricing {
+.advantages__card--pricing {
   background-image: url(../img/icons/tag.svg);
 }
 
-.advantages__item--about {
+.advantages__card--about {
   border: none;
   flex-basis: 100%;
   padding: 75px 0 0 183px;
