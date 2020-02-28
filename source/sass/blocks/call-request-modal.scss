@@ -1,0 +1,109 @@
+.call-request {
+    position: fixed;
+    padding-top: 113px;
+
+    width: 100vw;
+    height: 100vh;
+
+    left: 0;
+    top: 0;
+
+    background-color: rgba(0,0,0,0.6);
+}
+
+.call-request__container {
+  position: relative;
+  margin: 0 auto;
+  padding: 33px 40px 30px;
+
+  width: 490px;
+
+  background-color: $main-blue-color;
+}
+
+.call-request__close-btn {
+  position: absolute;
+  cursor: pointer;
+
+  width: 20px;
+  height: 20px;
+
+  top: 19px;
+  right: 19px;
+
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    width: 17px;
+    height: 1px;
+
+    top: 8px;
+    right: 0;
+
+    background-color: #ffffff;
+
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    width: 17px;
+    height: 1px;
+
+    top: 8px;
+    right: 0;
+
+    background-color: #ffffff;
+
+    transform: rotate(-45deg);
+  }
+}
+
+.call-request__heading {
+  @include reset;
+  margin-bottom: 12px;
+  font-size: 28px;
+  line-height: 39px;
+}
+
+.call-request__text {
+  @include reset;
+  margin-bottom: 32px;
+  padding-right: 20px;
+}
+
+.call-request__list {
+  @include reset;
+  display: block;
+}
+
+.call-request__item {
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.call-request__input,
+.call-request__textarea  {
+  padding: 15px 15px 20px 25px;
+}
+
+.call-request__checkbox-indicator {
+  top: 5px;
+  left: 0;
+}
+
+.call-request__item--checkbox {
+  padding-left: 50px;
+  padding-top: 2px;
+}

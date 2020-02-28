@@ -194,6 +194,39 @@
       <li class="site-footer__copyright-item">Developed by wow studio </li>
     </ul>
   </footer>
+  <section class="call-request">
+    <div class="call-request__container">
+      <button class="call-request__close-btn" type="button"></button>
+      <h2 class="feedback__heading call-request__heading">Закажите звонок</h2>
+      <p class="feedback__text call-request__text">
+        Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+      </p>
+      <form class="feedback__form call-request__form" action="" method="GET">
+        <ul class="feedback__list call-request__list">
+          <li class="feedback__item call-request__item">
+            <label class="feedback__label visually-hidden" for="name">имя:*</label>
+            <input class="call-request__input feedback__input" id="name" type="text" placeholder="Имя" required="">
+          </li>
+          <li class="feedback__item call-request__item">
+            <label class="feedback__label visually-hidden" for="phone">телефон:*</label>
+            <input class="call-request__input feedback__input" id="phone" type="text" placeholder="Телефон" required="">
+          </li>
+          <li class="feedback__item call-request__item feedback__item--textarea">
+            <textarea class="call-request__textarea feedback__textarea" name="question" cols="30" rows="4"
+              placeholder="Ваш вопрос"></textarea>
+          </li>
+          <li class="feedback__item call-request__item">
+            <button class="call-request__button feedback__button button" type="submit">отправить</button>
+          </li>
+          <li class="feedback__item feedback__item--checkbox call-request__item call-request__item--checkbox">
+            <input class="feedback__checkbox call-request__checkbox" type="checkbox" name="agree-modal" id="agree-modal">
+            <span class="feedback__checkbox-indicator call-request__checkbox-indicator"></span>
+            <label class="feedback__checkbox-label call-request__checkbox-label" for="agree-modal">Я согласен на обработку персональных данных</label>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
 </body>
 
 </html>
