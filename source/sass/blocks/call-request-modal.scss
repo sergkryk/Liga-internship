@@ -11,6 +11,10 @@
     background-color: rgba(0,0,0,0.6);
 }
 
+.call-request--hidden {
+  display: none;
+}
+
 .call-request__container {
   position: relative;
   margin: 0 auto;
