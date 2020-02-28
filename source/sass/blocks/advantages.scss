@@ -5,6 +5,10 @@
 
   display: flex;
   justify-content: center;
+
+  background-image: url(../img/triangle-mask.svg);
+  background-repeat: no-repeat;
+  background-position: center top -28px;
 }
 
 .advantages__container {
@@ -39,22 +43,47 @@
     margin: 0;
   }
 
+  &:hover {
+    color: #ffffff;
+    background-color: $main-blue-color;
+  }
+
+  &:hover .advantages__sub-heading {
+    color: #ffffff;
+  }
+
 }
 
 .advantages__card--terms {
   background-image: url(../img/icons/stopwatch.svg);
+
+  &:hover {
+    background-image: url(../img/icons/stopwatch-white.svg);
+  }
 }
 
 .advantages__card--suppliers {
   background-image: url(../img/icons/hired.svg);
+
+  &:hover {
+    background-image: url(../img/icons/hired-white.svg);
+  }
 }
 
 .advantages__card--privacy {
   background-image: url(../img/icons/detective.svg);
+
+  &:hover {
+    background-image: url(../img/icons/detective-white.svg);
+  }
 }
 
 .advantages__card--pricing {
   background-image: url(../img/icons/tag.svg);
+
+  &:hover {
+    background-image: url(../img/icons/tag-white.svg);
+  }
 }
 
 .advantages__card--about {
@@ -62,6 +91,8 @@
   flex-basis: 100%;
   padding: 75px 0 0 183px;
   position: relative;
+
+  background-color: transparent;
 
   &::before {
     content: "";

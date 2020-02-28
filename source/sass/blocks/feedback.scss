@@ -9,9 +9,9 @@
   flex-direction: column;
   align-items: flex-end;
 
-  background-image: url(../img/paper-airplane-1x.png);
+  background-image: url(../img/paper-airplane-1x.png), url(../img/triangle-double.svg);
   background-repeat: no-repeat;
-  background-position: left 196px top 68px;
+  background-position: left 18% top 68px, left 2% top -150px;
 }
 
 .feedback__heading {
