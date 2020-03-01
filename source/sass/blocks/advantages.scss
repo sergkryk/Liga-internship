@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
 
+  background-color: #ffffff;
   background-image: url(../img/triangle-mask.svg);
   background-repeat: no-repeat;
   background-position: center top -28px;
@@ -140,4 +141,117 @@
 .advantages__button {
   margin-top: 19px;
   padding: 12px 50px;
+}
+
+@media (max-width: $desktop-width) {
+  .advantages {
+    padding-top: 54px;
+    padding-bottom: 43px;
+
+    background-position: right 70% top 35%;
+  }
+
+  .advantages__container {
+    padding: 0 25px;
+  }
+
+  .advantages__card {
+    padding: 66px 20px 19px 25px;
+    margin-bottom: 29px;
+    flex-basis: 48%;
+    min-height: 232px;
+  }
+
+  .advantages__sub-heading {
+    margin-bottom: 10px;
+  }
+
+  .advantages__card--about {
+    padding: 26px 10px 40px 187px;
+
+    &::before {
+      width: 251px;
+      height: 351px;
+
+      background-size: 100%;
+
+      top: 27px;
+      left: -32px;
+    }
+  }
+
+  .advantages__sub-heading--about {
+    margin-bottom: 29px;
+    font-size: 32px;
+    line-height: 41px;
+  }
+
+  .advantages__text--about {
+    margin-bottom: 20px;
+  }
+
+  .advantages__text--dots {
+    position: relative;
+    max-height: 88px;
+    margin-bottom: 42px;
+    overflow: hidden;
+  }
+
+  .advantages__button {
+    margin-top: 0;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    padding: 36px 0 65px 0;
+  }
+
+  .advantages__container {
+    padding: 0 15px;
+  }
+
+  .advantages__card {
+    padding: 72px 10px 22px 25px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+  }
+
+  .advantages__card:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .advantages__sub-heading {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .advantages__card--about {
+    padding: 0 0 0 0;
+
+    &::before {
+      width: 0;
+    }
+  }
+
+  .advantages__sub-heading--about {
+    padding-top: 38px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .advantages__text--about {
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+
+  .advantages__text--dots {
+    margin-bottom: 28px;
+    max-height: 176px;
+  }
+
 }

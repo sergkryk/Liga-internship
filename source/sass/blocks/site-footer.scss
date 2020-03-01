@@ -47,6 +47,10 @@
 
   border-radius: 50%;
   background-image: url(../img/icons/vk-logo.svg);
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .site-footer__social-link--vk {
@@ -125,4 +129,147 @@
   color: #1B2D37;
 
   opacity: 0.5;
+}
+
+@media(max-width: $desktop-width) {
+  .site-footer {
+    &::after {
+      top: 95px;
+      left: 0;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      width: 100%;
+      height: 1px;
+
+      bottom: 60px;
+      left: 0;
+
+      background-color: $main-color-text;
+      opacity: 0.2;
+    }
+  }
+
+  .site-footer__wrapper {
+    padding: 17px 20px 17px 25px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .site-footer__container {
+    margin: 0;
+    width: 45%;
+  }
+
+  .site-footer__logo {
+    margin-bottom: 0;
+  }
+
+  .site-footer__container--social {
+    margin: 0 0 61px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-footer__container--address {
+    width: 55%;
+    padding-left: 50px;
+  }
+
+  .site-footer__socials {
+    padding-top: 13px;
+    padding-left: 40px;
+  }
+
+  .site-footer__social-link {
+    margin-right: 20px;
+  }
+
+  .site-footer__menu {
+    max-height: none;
+  }
+
+  .site-footer__menu-item {
+    margin-right: 0;
+  }
+
+  .site-footer__copyright-item--hide {
+    display: none;
+  }
+
+  .site-footer__copyright-item--move {
+    margin-left: -116px;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+  }
+
+  .site-footer__copyright {
+    padding: 0 32px;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .site-footer {
+    &::after {
+      top: 37.2%;
+      left: 0;
+    }
+    &::before {
+      top: 47.8%;
+      left: 0;
+    }
+  }
+  .site-footer__wrapper {
+    padding: 46px 15px 26px;
+    margin-bottom: 0;
+  }
+
+  .site-footer__copyright-item--move {
+    position: absolute;
+    top: 123px;
+    left: 50%;
+  }
+
+  .site-footer__container {
+    padding: 0;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .site-footer__container--social {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 85px;
+  }
+
+  .site-footer__logo {
+    margin-bottom: 77px;
+  }
+
+  .site-footer__socials {
+    padding: 0;
+  }
+
+  .site-footer__menu {
+    display: none;
+  }
+
+  .site-footer__address {
+    padding-right: 20px;
+  }
+
+  .site-footer__copyright {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-footer__copyright-item {
+    margin-bottom: 20px;
+  }
 }

@@ -75,3 +75,85 @@
 .proposals__card--equipment {
   background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-1x.jpg);
 }
+
+@media (max-width: $desktop-width) {
+  .proposals {
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
+
+  .proposals__wrapper {
+    padding: 0 27px 0 25px;
+  }
+
+  .proposals__heading {
+    margin-bottom: 43px;
+    padding-right: 90px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .proposals__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .proposals__item {
+    margin-bottom: 45px;
+    flex: 0 0 100%;
+  }
+
+  .proposals__card {
+    padding: 40px 480px 156px 45px;
+
+    background-size: cover;
+  }
+
+  .proposals__card--production {
+    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/production-tablet-1x.jpg);
+  }
+  .proposals__card--installing {
+    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/installing-tablet-1x.jpg);
+  }
+  .proposals__card--equipment {
+    padding-top: 50px;
+    padding-right: 500px;
+    padding-bottom: 147px;
+    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-tablet-1x.jpg);
+  }
+}
+
+@media(max-width: $tablet-width) {
+
+  .proposals__wrapper {
+    padding: 0 15px;
+  }
+
+  .proposals__heading {
+    padding: 0 0 0 10px;
+    margin-bottom: 42px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .proposals__item {
+    margin-bottom: 30px;
+  }
+
+  .proposals__card {
+    padding: 21px 63px 173px 35px;
+    min-width: 290px;
+    min-height: 256px;
+  }
+
+  .proposals__card--production {
+    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/production-mobile-1x.jpg);
+  }
+  .proposals__card--installing {
+    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/installing-mobile-1x.jpg);
+  }
+  .proposals__card--equipment {
+    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-mobile-1x.jpg);
+  }
+
+}

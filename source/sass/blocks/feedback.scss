@@ -122,3 +122,80 @@
 .feedback__checkbox:checked + .feedback__checkbox-indicator {
   background-image: url("../img/checkbox-checked.svg");
 }
+
+@media(max-width: $desktop-width) {
+  .feedback {
+    padding: 0;
+  }
+
+  .feedback__wrapper {
+    padding: 77px 87px 61px 94px;
+    align-items: flex-start;
+
+    background-image: none;
+  }
+
+  .feedback__heading {
+    margin: 0 0 15px -5px;
+
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .feedback__text {
+    margin: 0 0 55px 0;
+  }
+
+  .feedback__list {
+    margin-right: 0;
+
+    max-width: 100%;
+  }
+
+  .feedback__item--textarea {
+    margin-bottom: 46px;
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .feedback__wrapper {
+    padding: 29px 15px 11px;
+  }
+
+  .feedback__heading {
+    margin-left: 0;
+    margin-bottom: 13px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .feedback__text {
+    margin-bottom: 23px;
+  }
+
+  .feedback__item {
+    margin-bottom: 30px;
+    flex: 0 0 100%;
+  }
+
+  .feedback__item--textarea {
+    margin-bottom: 26px;
+  }
+
+  .feedback__textarea {
+    height: 104px;
+  }
+
+  .feedback__input {
+    padding: 16px 17px 18px;
+  }
+
+  .feedback__item--checkbox {
+    padding: 0 18px 0 34px;
+  }
+
+  .feedback__checkbox-indicator {
+    top: 3px;
+    left: 0;
+  }
+}

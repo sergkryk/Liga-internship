@@ -102,8 +102,8 @@
   padding: 15px 15px 20px 25px;
 }
 
-.call-request__input:invalid {
-  border-color: red;
+.call-request__input:invalid:not(:placeholder-shown) {
+  outline-color: rgb(244, 0, 53);
 }
 
 .call-request__checkbox-indicator {

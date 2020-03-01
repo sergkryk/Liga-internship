@@ -16,16 +16,18 @@
   <header class="site-header">
     <div class="site-header__wrapper container">
       <a class="site-header__logo" aria-label="Переход на главную страницу">
-        <img src="img/icons/smart-device-logo.svg" width="202" alt="Логотип сайта">
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/icons/logo.svg">
+          <img src="img/icons/smart-device-logo.svg" width="202" alt="Логотип сайта">
+        </picture>
       </a>
       <a class="site-header__link site-header__menu" href="#" aria-label="Открыть меню">
-        <span class="site-header__menu-toggle site-header__menu-toggle--closed"></span>
       </a>
       <a href="mailto:example@mail.me" class="site-header__link">
-        <img class="site-header__icon" src="img/icons/envelope.svg" alt="Отправить нам письмо" width="19">info@sd.ru
+        <img class="site-header__icon" src="img/icons/envelope.svg" alt="Отправить нам письмо" width="19"><span class="site-header__link-text">info@sd.ru</span>
       </a>
-      <a href="tel:08001234567" class="site-header__link">
-        <img class="site-header__icon" src="img/icons/phone-call.svg" alt="Позвонить нам" width="19">+7 (495) 000 52 52
+      <a href="tel:08001234567" class="site-header__link site-header__link--phone">
+        <img class="site-header__icon" src="img/icons/phone-call.svg" alt="Позвонить нам" width="19"><span class="site-header__link-text">+7 (495) 000 52 52</span>
       </a>
       <a href="#" class="site-header__button button">заказать звонок</a>
     </div>
@@ -37,7 +39,7 @@
         <p class="hero__description">
           производство и монтаж, поставка комплектующих, блоков&nbspи модулей
         </p>
-        <a href="#feedback" class="hero__link button" aria-label="Бесплатная консультация">получить бесплатную консультацию</a>
+        <a href="#feedback" class="hero__link button" aria-label="Бесплатная консультация"><span>получить бесплатную консультацию</span></a>
         <a href="#advantages" class="hero__anchor-link" aria-label="Переход по странице к нашим преимуществам">Скролл вниз</a>
       </div>
     </section>
@@ -47,7 +49,7 @@
         <div class="advantages__container container">
           <div class="advantages__card advantages__card--terms">
             <h2 class="advantages__sub-heading">Оперативные сроки</h2>
-            <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
+            <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать&nbspстоимость,
               производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </div>
           <div class="advantages__card advantages__card--suppliers">
@@ -73,7 +75,7 @@
               Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые
               технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
             </p>
-            <p class="advantages__text advantages__text--about">
+            <p class="advantages__text advantages__text--about advantages__text--dots">
               Наши поставщики - мировые производители электронных компонентов:
               OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие
               Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
@@ -169,7 +171,7 @@
           <li class="site-footer__menu-item"><a href="#" class="site-footer__link" aria-label="Контакты">Контакты</a></li>
         </ul>
       </div>
-      <div class="site-footer__container">
+      <div class="site-footer__container site-footer__container--address">
         <h3 class="site-footer__heading">наш офис</h3>
         <ul class="site-footer__address">
           <li class="site-footer__address-item">
@@ -188,8 +190,8 @@
       </div>
     </div>
     <ul class="site-footer__copyright container">
-      <li class="site-footer__copyright-item">Все права защищены</li>
-      <li class="site-footer__copyright-item">1999-2018 SD Service Devices</li>
+      <li class="site-footer__copyright-item site-footer__copyright-item--hide">Все права защищены</li>
+      <li class="site-footer__copyright-item site-footer__copyright-item--move">1999-2018 SD Service Devices</li>
       <li class="site-footer__copyright-item">Условия конфиденциальности</li>
       <li class="site-footer__copyright-item">Developed by wow studio </li>
     </ul>
@@ -205,7 +207,7 @@
         <ul class="feedback__list call-request__list">
           <li class="feedback__item call-request__item">
             <label class="feedback__label visually-hidden" for="name">имя:*</label>
-            <input class="call-request__input feedback__input" id="name" type="text" placeholder="Имя" required name="user-name">
+            <input class="call-request__input feedback__input" id="name" type="text" placeholder="Имя" required name="user-name" pattern="^[A-Za-z0-9]+([A-Za-z0-9]*|[._-]?[A-Za-z0-9]+)*$">
           </li>
           <li class="feedback__item call-request__item">
             <label class="feedback__label visually-hidden" for="phone">телефон:*</label>

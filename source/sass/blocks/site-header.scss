@@ -25,6 +25,7 @@
 .site-header__button {
   padding: 14px 25px 15px 28px;
   color: #ffffff;
+  white-space: nowrap;
 }
 
 
@@ -60,4 +61,94 @@
 
     background-color: #ffffff;
   }
+}
+
+@media (max-width: $desktop-width) {
+
+  .site-header__wrapper {
+    padding: 10px 12.5px 0px;
+  }
+  .site-header__logo {
+    padding-bottom: 0;
+    width: 222px;
+    margin-right: auto;
+  }
+
+  .site-header__link {
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-right: 0px;
+    padding: 20px 15px 15px;
+  }
+
+  .site-header__link--phone {
+    margin-right: 0;
+  }
+
+  .site-header__icon{
+    margin: 0;
+    width: 25px;
+  }
+
+  .site-header__link-text {
+    display: none;
+  }
+
+  .site-header__button {
+    display: none;
+  }
+
+  .site-header__menu {
+    margin-right: 18px;
+    padding: 30px 20px;
+
+    width: 5px;
+    height: 5px;
+
+    &::before {
+
+      top: 24px;
+      left: 0;
+    }
+
+    &::after {
+
+      top: 36px;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .site-header__wrapper {
+    padding: 4px 5px 4px 13px;
+  }
+
+  .site-header__logo {
+    padding: 5px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .site-header__link {
+    padding: 20px 10px 15px;
+  }
+
+  .site-header__menu {
+    padding: 30px 30px;
+    margin-right: 0;
+
+    &::before {
+      top: 21px;
+      left: 3px;
+    }
+
+    &::after {
+      top: 33px;
+      left: 3px;
+    }
+  }
+
+
 }
