@@ -13,8 +13,10 @@
 }
 
 .advantages__container {
-  padding-left: 221px;
-  padding-right: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  // padding-left: 221px;
+  // padding-right: 200px;
 
   display: flex;
   flex-wrap: wrap;
@@ -146,7 +148,7 @@
 @media (max-width: $desktop-width) {
   .advantages {
     padding-top: 54px;
-    padding-bottom: 43px;
+    padding-bottom: 20px;
 
     background-position: right 70% top 35%;
   }
@@ -254,4 +256,11 @@
     max-height: 176px;
   }
 
+}
+
+@media(min-width: 1400px) {
+  .advantages__container {
+    padding-left: 221px;
+    padding-right: 200px;
+  }
 }
