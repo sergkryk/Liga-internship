@@ -79,7 +79,7 @@
 
 .site-footer__menu {
   @include reset-list;
-  max-height: 115px;
+  max-height: 130px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -271,5 +271,11 @@
 
   .site-footer__copyright-item {
     margin-bottom: 20px;
+  }
+}
+
+@media(min-width: 1300px) {
+  .site-footer__menu {
+    max-height: 115px;
   }
 }
