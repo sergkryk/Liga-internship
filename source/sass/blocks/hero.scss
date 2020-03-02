@@ -24,13 +24,11 @@
   background-color: transparent;
   background-image: url(../img/plates-1x.png), url(../img/triangle-double.svg);
   background-repeat: no-repeat;
-  background-position: left 99% top 160px, left 95% top 20px;
-}
+  background-position: left calc(50% + 435px) top calc(50% + 26px), left 95% top 20px;
 
-
-@media(max-width: 1400px) {
-  .hero__wrapper {
-    background-size: 40%;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url(../img/plates-2x.png), url(../img/triangle-double.svg);
+    background-size: 44%, 42%;
   }
 }
 
@@ -111,7 +109,7 @@
   .hero__wrapper {
     padding: 113px 190px 162px 90px;
 
-    background-position: right -65% top 14%, right -85% top -111%;
+    background-position: right calc(50% - 355px) top 13%, right calc(50% - 320px) top -112%;
     background-size: 60%, 69%;
   }
 
@@ -164,8 +162,9 @@
   .hero__wrapper {
     padding: 215px 15px 70px;
 
-    background-position: right 10% top 6%, right -320px top -92px;
-    background-size: 90%, 150%;
+    background-size: 94%, 153%;
+    background-position: right calc(50% - 15px) top 6%, right calc(50% - 240px) top -113px;
+    background-clip: border-box;
   }
   .hero__heading {
     margin-bottom: 25px;

@@ -131,6 +131,11 @@
   opacity: 0.5;
 }
 
+.site-footer__toggle {
+  position: absolute;
+  left: -9999px;
+}
+
 @media(max-width: $desktop-width) {
   .site-footer {
     &::after {
@@ -216,17 +221,18 @@
 
 @media(max-width: $tablet-width) {
   .site-footer {
-    &::after {
-      top: 37.2%;
-      left: 0;
-    }
+
     &::before {
-      top: 47.8%;
-      left: 0;
+      width: 0;
+    }
+
+    &::after {
+      width: 0;
     }
   }
+
   .site-footer__wrapper {
-    padding: 46px 15px 26px;
+    padding: 46px 15px 0;
     margin-bottom: 0;
   }
 
@@ -237,15 +243,20 @@
   }
 
   .site-footer__container {
+    position: relative;
     padding: 0;
-    margin-bottom: 30px;
     width: 100%;
+  }
+
+  .site-footer__container--menu,
+  .site-footer__container--address {
+    border-top: 1px solid rgba(102,102,102,0.2);
   }
 
   .site-footer__container--social {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 85px;
+    margin-bottom: 55px;
   }
 
   .site-footer__logo {
@@ -258,15 +269,77 @@
 
   .site-footer__menu {
     display: none;
+    padding-bottom: 26px;
   }
 
   .site-footer__address {
+    display: none;
     padding-right: 20px;
+    padding-bottom: 26px;
+  }
+
+  .site-footer__heading {
+    position: relative;
+    display: block;
+  }
+
+  .site-footer__heading--plus {
+    margin: 0;
+    padding: 30px 0 28px;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: 37px;
+      right: 2px;
+
+      width: 16px;
+      height: 1px;
+
+      background-color: rgba(102,102,102,0.2);
+    }
+
+    &::before {
+
+      content: "";
+
+      position: absolute;
+
+      top: 37px;
+      right: 2px;
+
+      width: 16px;
+      height: 1px;
+
+      background-color: rgba(102,102,102,0.2);
+
+      transform: rotate(90deg);
+    }
+  }
+
+  .site-footer__toggle:checked + .site-footer__heading--plus {
+
+    &::before {
+      width: 0;
+    }
+  }
+
+  .site-footer__toggle:checked ~ .site-footer__menu {
+    display: block;
+  }
+
+  .site-footer__toggle:checked  ~ .site-footer__address {
+    display: block;
   }
 
   .site-footer__copyright {
+    padding-top: 30px;
     flex-direction: column;
     align-items: center;
+    border-top: 1px solid rgba(102,102,102,0.2);
   }
 
   .site-footer__copyright-item {
