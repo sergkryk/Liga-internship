@@ -1,11 +1,4 @@
 .advantages {
-  padding-top: 111px;
-  padding-bottom: 112px;
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-
   background-color: #ffffff;
   background-image: url(../img/triangle-mask.svg);
   background-repeat: no-repeat;
@@ -13,11 +6,14 @@
 }
 
 .advantages__container {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 112px 50px 20px;
 
   display: flex;
   flex-wrap: wrap;
+}
+
+.advantages__container--about {
+  padding: 20px 50px 109px;
 }
 
 .advantages__card {
@@ -34,14 +30,10 @@
 
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: left 43px top 40px;
+  background-position: left 45px top 41px;
 
   &:nth-child(odd) {
     margin-right: 28px;
-  }
-
-  &:last-child {
-    margin: 0;
   }
 
   &:hover {
@@ -90,7 +82,7 @@
 .advantages__card--about {
   border: none;
   flex-basis: 100%;
-  padding: 75px 0 0 183px;
+  padding: 35px 10px 0 183px;
   position: relative;
 
   background-color: transparent;
@@ -127,7 +119,7 @@
 }
 
 .advantages__sub-heading--about {
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   font-size: 36px;
   line-height: 51px;
   color: $main-color-text;
@@ -140,12 +132,15 @@
 }
 
 .advantages__text--about {
-  padding-bottom: 23px;
+  margin-bottom: 23px;
+}
+
+.advantages__text--dots {
+  margin-bottom: 39px;
 }
 
 .advantages__button {
-  margin-top: 19px;
-  padding: 12px 50px;
+  padding: 13px 49px 14px;
 }
 
 @media (max-width: $desktop-width) {
@@ -260,7 +255,8 @@
 }
 
 @media(min-width: 1400px) {
-  .advantages__container {
+  .advantages__container,
+  .advantages__container--about {
     padding-left: 221px;
     padding-right: 200px;
   }
