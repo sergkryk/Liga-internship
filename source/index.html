@@ -13,23 +13,30 @@
 </head>
 
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
   <header class="site-header">
     <div class="site-header__wrapper container">
       <a class="site-header__logo" aria-label="Переход на главную страницу">
         <picture>
-          <source media="(max-width: 768px)" srcset="img/icons/logo.svg">
-          <img src="img/icons/smart-device-logo.svg" width="202" alt="Логотип сайта">
+          <source media="(max-width: 768px)" srcset="img/logo.svg">
+          <img src="img/smart-device-logo.svg" width="202" alt="Логотип сайта">
         </picture>
       </a>
       <a class="site-header__link site-header__menu" href="#" aria-label="Открыть меню">
       </a>
       <a href="mailto:example@mail.me" class="site-header__link">
-        <img class="site-header__icon" src="img/icons/envelope.svg" alt="Отправить нам письмо" width="19"><span
-          class="site-header__link-text">info@sd.ru</span>
+        <svg class="site-header__icon" width="19" height="19">
+          <use xlink:href="#icon-envelope"></use>
+        </svg>
+        <span class="site-header__link-text">info@sd.ru</span>
       </a>
-      <a href="tel:08001234567" class="site-header__link site-header__link--phone">
-        <img class="site-header__icon" src="img/icons/phone-call.svg" alt="Позвонить нам" width="19"><span
-          class="site-header__link-text">+7 (495) 000 52 52</span>
+      <a href="tel:08001234567" class="site-header__link">
+        <svg class="site-header__icon" width="19" height="19">
+          <use xlink:href="#icon-phone-call"></use>
+        </svg>
+        <span class="site-header__link-text">+7 (495) 000 52 52</span>
       </a>
       <a href="#" class="site-header__button button">заказать звонок</a>
     </div>
@@ -51,12 +58,18 @@
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="advantages__container container">
         <div class="advantages__card advantages__card--terms">
+          <svg class="advantages__icon" width="29" height="35">
+            <use xlink:href="#icon-stopwatch"></use>
+          </svg>
           <h2 class="advantages__sub-heading">Оперативные сроки</h2>
           <p class="advantages__text">Усовершенствованная логистическая система позволяет нам
             просчитывать&nbsp;стоимость,
             производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </div>
         <div class="advantages__card advantages__card--suppliers">
+          <svg class="advantages__icon" width="35" height="35">
+            <use xlink:href="#icon-hired"></use>
+          </svg>
           <h2 class="advantages__sub-heading">Крупные поставщики</h2>
           <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
             HOLGLITRONIC, REFOND.
@@ -64,11 +77,17 @@
           </p>
         </div>
         <div class="advantages__card advantages__card--privacy">
+          <svg class="advantages__icon" width="36" height="31">
+            <use xlink:href="#icon-detective"></use>
+          </svg>
           <h2 class="advantages__sub-heading">Полная конфиденциальность</h2>
           <p class="advantages__text">По желанию клиента мы обеспечиваем полную конфеденциальность.
           </p>
         </div>
         <div class="advantages__card advantages__card--pricing">
+          <svg class="advantages__icon" width="35" height="35">
+            <use xlink:href="#icon-tag"></use>
+          </svg>
           <h2 class="advantages__sub-heading">Персонализация стоимости</h2>
           <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки,
             чтобы установить ту цену, которая Вас устраивает. </p>
@@ -143,15 +162,30 @@
     <div class="site-footer__wrapper container">
       <div class="site-footer__container site-footer__container--social">
         <a href="#" class="site-footer__logo" aria-label="Главная страница компании">
-          <img src="img/icons/logo-full.svg" width="211" alt="Логотип компании">
+          <img src="img/logo-full.svg" width="211" alt="Логотип компании">
         </a>
         <ul class="site-footer__socials">
-          <li class="site-footer__social-link site-footer__social-link--fb"><a href="#"
-              aria-label="Мы в социальной сети FB"></a></li>
-          <li class="site-footer__social-link site-footer__social-link--ok"><a href="#"
-              aria-label="Мы в социальной сети OK"></a></li>
-          <li class="site-footer__social-link site-footer__social-link--vk"><a href="#"
-              aria-label="Мы в социальной сети VK"></a></li>
+          <li class="site-footer__social-link site-footer__social-link--fb">
+            <a href="#"aria-label="Мы в социальной сети FB">
+              <svg class="site-footer__social-icon" width="27" height="27">
+                <use xlink:href="#icon-fb-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="site-footer__social-link site-footer__social-link--ok">
+            <a href="#" aria-label="Мы в социальной сети OK">
+              <svg class="site-footer__social-icon" width="27" height="27">
+                <use xlink:href="#icon-ok-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="site-footer__social-link site-footer__social-link--vk">
+            <a href="#" aria-label="Мы в социальной сети VK">
+              <svg class="site-footer__social-icon" width="27" height="27">
+                <use xlink:href="#icon-vk-logo"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="site-footer__container site-footer__container--menu">

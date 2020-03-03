@@ -45,38 +45,16 @@
     color: #ffffff;
   }
 
+  &:hover .advantages__icon {
+    stroke: #ffffff;
+  }
+
 }
 
-.advantages__card--terms {
-  background-image: url(../img/icons/stopwatch.svg);
-
-  &:hover {
-    background-image: url(../img/icons/stopwatch-white.svg);
-  }
-}
-
-.advantages__card--suppliers {
-  background-image: url(../img/icons/hired.svg);
-
-  &:hover {
-    background-image: url(../img/icons/hired-white.svg);
-  }
-}
-
-.advantages__card--privacy {
-  background-image: url(../img/icons/detective.svg);
-
-  &:hover {
-    background-image: url(../img/icons/detective-white.svg);
-  }
-}
-
-.advantages__card--pricing {
-  background-image: url(../img/icons/tag.svg);
-
-  &:hover {
-    background-image: url(../img/icons/tag-white.svg);
-  }
+.advantages__icon {
+  position: absolute;
+  top: 13.2%;
+  left: 8%;
 }
 
 .advantages__card--about {
