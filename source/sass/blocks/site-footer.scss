@@ -30,8 +30,7 @@
 }
 
 .site-footer__container--menu {
-  width: 35%;
-  margin-right: 9.1%;
+  width: 44.1%;
 }
 
 .site-footer__container--address {
@@ -78,15 +77,17 @@
 
 .site-footer__menu {
   @include reset-list;
-  max-height: 130px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
 .site-footer__menu-item {
-  width: 50%;
-  margin-right: 47px;
+  width: 45%;
+
+  &:nth-child(odd) {
+    margin-right: 12px;
+  }
 }
 
 .site-footer__link {
