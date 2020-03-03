@@ -233,27 +233,27 @@
   <section class="call-request call-request--hidden">
     <div class="call-request__container">
       <button class="call-request__close-btn" type="button"></button>
-      <h2 class="feedback__heading call-request__heading">Закажите звонок</h2>
-      <p class="feedback__text call-request__text">
+      <h2 class="call-request__heading">Закажите звонок</h2>
+      <p class="call-request__text">
         Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
       </p>
-      <form class="feedback__form call-request__form" action="https://echo.htmlacademy.ru" method="GET">
-        <label class="feedback__input-label call-request__input-label" for="user-name">
-          <input class="call-request__input feedback__input" id="user-name" type="text" placeholder="Имя" required
+      <form class="call-request__form" action="https://echo.htmlacademy.ru" method="GET">
+        <label class="call-request__input-label" for="user-name">
+          <input class="call-request__input" id="user-name" type="text" placeholder="Имя" required
             name="user-name" pattern="^[A-Za-zА-Яа-я0-9]+([A-Za-zА-Яа-я0-9]*|[._-]?[A-Za-zА-Яа-я0-9]+)*$">
         </label>
-        <label class="feedback__input-label call-request__input-label" for="user-phone">
-          <input class="call-request__input feedback__input" id="user-phone" type="text" placeholder="Телефон"
+        <label class="call-request__input-label" for="user-phone">
+          <input class="call-request__input" id="user-phone" type="text" placeholder="Телефон"
             name="user-phone" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18">
         </label>
-        <label class="feedback__textarea-label call-request__textarea-label" for="user-question" aria-label="Поле для ввода вопроса">
-          <textarea class="call-request__textarea feedback__textarea" id="user-question" name="user-question" cols="30"
+        <label class="call-request__textarea-label" for="user-question" aria-label="Поле для ввода вопроса">
+          <textarea class="call-request__textarea" id="user-question" name="user-question" cols="30"
             rows="4" placeholder="Ваш вопрос"></textarea>
         </label>
-        <button class="call-request__button feedback__button button" type="submit">отправить</button>
-        <label class="feedback__checkbox-label call-request__checkbox-label" for="agree-modal"
+        <button class="call-request__button button" type="submit">отправить</button>
+        <label class="call-request__checkbox-label" for="agree-modal"
           aria-label="Подтверждение согласия на обработку персональных данных">Я согласен на обработку персональных данных
-          <input class="feedback__checkbox call-request__checkbox" type="checkbox" name="agree-modal" id="agree-modal" required>
+          <input class="call-request__checkbox" type="checkbox" name="agree-modal" id="agree-modal" required>
           <svg class="call-request__checkbox-indicator call-request__checkbox-indicator--checked" width="27" height="27">
             <use xlink:href="#icon-checkbox-checked"></use>
           </svg>
