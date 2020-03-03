@@ -73,6 +73,7 @@
 
 .call-request__heading {
   @include reset;
+  width: 100%;
   margin-bottom: 12px;
   font-size: 28px;
   line-height: 39px;
@@ -80,21 +81,39 @@
 
 .call-request__text {
   @include reset;
+  width: 100%;
   margin-bottom: 32px;
   padding-right: 20px;
 }
 
-.call-request__list {
-  @include reset;
+.call-request__form {
+  width: 100%;
   display: block;
+  padding-bottom: 9px;
 }
 
-.call-request__item {
+.call-request__input-label {
+  display: block;
+  width: 100%;
   margin-bottom: 29px;
+}
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+.call-request__textarea-label {
+  display: block;
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+.call-request__button {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.call-request__checkbox-label {
+  display: block;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 0;
 }
 
 .call-request__input,
@@ -107,11 +126,21 @@
 }
 
 .call-request__checkbox-indicator {
-  top: 5px;
+  position: absolute;
+
+  fill: transparent;
+
+  width: 16px;
+  height: 16px;
+
+  top: 3px;
   left: 0;
 }
 
-.call-request__item--checkbox {
-  padding-left: 50px;
-  padding-top: 2px;
+.call-request__checkbox-indicator--checked {
+  display: none;
+}
+
+.call-request__checkbox:checked + .call-request__checkbox-indicator--checked {
+  display: block;
 }

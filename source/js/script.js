@@ -5,7 +5,7 @@ var popupCloseBtn = popup.querySelector('.call-request__close-btn');
 var form = popup.querySelector('.call-request__form');
 var login = popup.querySelector('[name=user-name]');
 var phone = popup.querySelector('[name=user-phone]');
-var question = popup.querySelector('[name=user-question]');
+var question = popup.querySelector('[name=question]');
 var loginStorage = localStorage.getItem('login');
 var phoneStorage = localStorage.getItem('phone');
 

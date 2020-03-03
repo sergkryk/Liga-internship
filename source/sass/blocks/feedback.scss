@@ -9,6 +9,16 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  background-image: url(../img/paper-airplane-1x.png), url(../img/triangle-double.svg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 200px) top calc(50% - 30px), left calc(50% - 240px) top calc(50% - 76px);
+  background-size: 32%, 42%;
+
+  @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
+    background-image: url(../img/paper-airplane-2x.png), url(../img/triangle-double.svg);
+    background-size: 32%, 42%;
+  }
 }
 
 .feedback__heading {
@@ -206,13 +216,9 @@
 
 @media(min-width: 1150px) {
   .feedback__wrapper {
-    background-image: url(../img/paper-airplane-1x.png), url(../img/triangle-double.svg);
-    background-repeat: no-repeat;
     background-position: left calc(50% - 350px) top calc(50% - 30px), left calc(50% - 440px) top calc(50% - 76px);
-    background-size: 32%, 42%;
 
     @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
-      background-image: url(../img/paper-airplane-2x.png), url(../img/triangle-double.svg);
       background-size: 32%, 42%;
     }
   }
