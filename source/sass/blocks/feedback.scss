@@ -1,10 +1,11 @@
 .feedback {
-  padding-top: 90px;
-  padding-bottom: 70px;
   background-color: $main-blue-color;
 }
 
 .feedback__wrapper {
+  padding-top: 90px;
+  padding-bottom: 110px;
+
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -12,8 +13,6 @@
 
 .feedback__heading {
   @include reset;
-
-  margin-right: 146px;
   margin-bottom: 9px;
 
   font-family: $secondary-fonts;
@@ -21,47 +20,39 @@
   font-size: 36px;
   line-height: 51px;
   color: #FFFFFF;
+
+  width: 49.2%;
+
 }
 
 .feedback__text {
   @include reset;
-  margin-right: 370px;
-  margin-bottom: 52px;
+  margin-bottom: 53px;
+  width: 48.8%;
 
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
 }
 
-
-.feedback__list {
-  @include reset-list;
-  margin-right: 117px;
-
-  max-width: 570px;
+.feedback__form {
+  width: 48.8%;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
-.feedback__item {
-  margin-bottom: 43px;
-  flex: 0 0 47.5%;
+.feedback__input-label {
+  width: 47.2%;
+  margin-bottom: 42px;
 }
 
-.feedback__item--textarea {
-  flex: 0 0 100%;
-}
-
-.feedback__textarea {
-  padding: 12px 17px 16px;
-
+.feedback__textarea-label {
   width: 100%;
-
-  color: #ffffff;
-  border: none;
-  background-color: rgba(255,255,255,0.2);
+  margin-bottom: 41px;
+  resize: none;
 }
 
 .feedback__input {
@@ -70,7 +61,17 @@
   width: 100%;
   color: #ffffff;
   border: none;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.feedback__textarea {
+  padding: 12px 17px 20px;
+
+  width: 100%;
+
+  color: #ffffff;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .feedback__input::placeholder,
@@ -81,21 +82,15 @@
 }
 
 .feedback__button {
-  width: 100%;
+  width: 47.2%;
   padding: 14px 0;
 }
 
-.feedback__item--checkbox {
-  position: relative;
-  padding: 6px 10px 6px 40px;
-}
-
-.feedback__checkbox {
-  position: absolute;
-  left: -999999px;
-}
-
 .feedback__checkbox-label {
+  position: relative;
+  width: 47.2%;
+  padding-left: 40px;
+
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
@@ -107,16 +102,21 @@
   width: 16px;
   height: 16px;
 
-  top: 9px;
-  left: 9px;
+  top: 0;
+  left: 6px;
 
   background-image: url(../img/checkbox-empty.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.feedback__checkbox {
+  position: absolute;
+  left: -99999px;
+}
+
 .feedback__checkbox:checked + .feedback__checkbox-indicator {
-  background-image: url("../img/checkbox-checked.svg");
+    background-image: url("../img/checkbox-checked.svg");
 }
 
 @media(max-width: $desktop-width) {
@@ -200,12 +200,19 @@
   .feedback__wrapper {
     background-image: url(../img/paper-airplane-1x.png), url(../img/triangle-double.svg);
     background-repeat: no-repeat;
-    background-position: left calc(50% - 350px) top calc(50% - 39px), left calc(50% - 440px) top calc(50% - 86px);
-    background-size: 30%, 50%;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-position: left calc(50% - 350px) top calc(50% - 30px), left calc(50% - 440px) top calc(50% - 76px);
+    background-size: 32%, 42%;
+
+    @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
       background-image: url(../img/paper-airplane-2x.png), url(../img/triangle-double.svg);
       background-size: 32%, 42%;
     }
   }
 }
 
+@media(min-width: 1400px) {
+  .feedback__wrapper {
+    padding-left: 221px;
+    padding-right: 207px;
+  }
+}

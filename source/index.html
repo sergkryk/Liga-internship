@@ -98,50 +98,41 @@
           Service Device предлагает следующие товары и услуги
         </h2>
         <div class="proposals__list">
-            <a href="#" class="proposals__card proposals__card--production"
-              aria-label="Переход на страницу производства плат">
-              Производство печатных плат
-            </a>
-            <a href="#" class="proposals__card proposals__card--installing"
-              aria-label="Переход на страницу монтажа плат">
-              Монтаж печатных плат
-            </a>
-            <a href="#" class="proposals__card proposals__card--equipment"
-              aria-label="Переход на страницу комплектующих">
-              Комплектующие для светотехники
-            </a>
+          <a href="#" class="proposals__card proposals__card--production"
+            aria-label="Переход на страницу производства плат">
+            Производство печатных плат
+          </a>
+          <a href="#" class="proposals__card proposals__card--installing" aria-label="Переход на страницу монтажа плат">
+            Монтаж печатных плат
+          </a>
+          <a href="#" class="proposals__card proposals__card--equipment" aria-label="Переход на страницу комплектующих">
+            Комплектующие для светотехники
+          </a>
         </div>
       </div>
     </section>
     <section class="feedback" id="feedback-section">
       <div class="feedback__wrapper container">
         <h2 class="feedback__heading">Остались вопросы? Задайте их нам!</h2>
-        <p class="feedback__text">
-          Мы проконсультируем Вас бесплатно
-        </p>
+          <p class="feedback__text">
+            Мы проконсультируем Вас бесплатно
+          </p>
         <form class="feedback__form" action="https://echo.htmlacademy.ru" method="GET">
-          <ul class="feedback__list">
-            <li class="feedback__item">
-              <label class="feedback__label visually-hidden" for="name">имя:*</label>
-              <input class="feedback__input" id="name" type="text" placeholder="Имя" required="">
-            </li>
-            <li class="feedback__item">
-              <label class="feedback__label visually-hidden" for="phone">телефон:*</label>
-              <input class="feedback__input" id="phone" type="text" placeholder="Телефон" required="">
-            </li>
-            <li class="feedback__item feedback__item--textarea">
-              <textarea class="feedback__textarea" name="question" cols="30" rows="7"
-                placeholder="Ваш вопрос"></textarea>
-            </li>
-            <li class="feedback__item">
-              <button class="feedback__button button" type="submit">задать вопрос</button>
-            </li>
-            <li class="feedback__item feedback__item--checkbox">
-              <input class="feedback__checkbox" type="checkbox" name="agree" id="agree">
-              <span class="feedback__checkbox-indicator"></span>
-              <label class="feedback__checkbox-label" for="agree">Я согласен на обработку персональных данных</label>
-            </li>
-          </ul>
+          <label class="feedback__input-label" for="name" aria-label="Поле для ввода имени">
+            <input class="feedback__input" id="name" type="text" placeholder="Имя" required="">
+          </label>
+          <label class="feedback__input-label" for="phone" aria-label="Поле для ввода номера телефона">
+            <input class="feedback__input" id="phone" type="text" placeholder="Телефон" required="">
+          </label>
+          <label class="feedback__textarea-label" for="user-question" aria-label="Поле для ввода вопроса">
+            <textarea class="feedback__textarea" id="user-question" name="question" cols="30" rows="7" placeholder="Ваш вопрос"></textarea>
+          </label>
+          <button class="feedback__button button" type="submit">задать вопрос</button>
+          <label class="feedback__checkbox-label" for="agree" aria-label="Подтверждение согласия на обработку персональных данных">Я согласен на обработку персональных данных
+            <input class="feedback__checkbox" type="checkbox" name="agree" id="agree">
+            <span class="feedback__checkbox-indicator"></span>
+            <!-- <label class="feedback__checkbox-label" for="agree">Я согласен на обработку персональных данных</label> -->
+          </label>
         </form>
       </div>
     </section>
