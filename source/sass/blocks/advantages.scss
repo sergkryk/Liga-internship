@@ -32,10 +32,6 @@
   border: 1px solid #ebebeb;
   border-left: 2px solid $main-blue-color;
 
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: left 45px top 41px;
-
   &:nth-child(odd) {
     margin-right: 28px;
   }
@@ -57,8 +53,8 @@
 
 .advantages__icon {
   position: absolute;
-  top: 13.2%;
-  left: 8%;
+  top: 42px;
+  left: 45px;
 }
 
 .advantages__card--about {
@@ -75,8 +71,8 @@
     width: 220px;
     height: 317px;
 
-    bottom: -15px;
-    left: -27px;
+    top: 0;
+    left: -29px;
 
     background-color: transparent;
     background-image: url(../img/2005.png);
