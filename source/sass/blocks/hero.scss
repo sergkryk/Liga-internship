@@ -88,9 +88,9 @@
     }
   }
   .hero__wrapper {
-    padding: 113px 190px 162px 90px;
+    padding: 108px 190px 162px 90px;
 
-    background-position: right calc(50% - 355px) top 13%, right calc(50% - 320px) top -112%;
+    background-position: right calc(50% - 355px) top 10%, right calc(50% - 320px) top -125%;
     background-size: 60%, 69%;
   }
 
@@ -141,10 +141,10 @@
   }
 
   .hero__wrapper {
-    padding: 215px 15px 70px;
+    padding: 217px 15px 70px;
 
-    background-size: 94%, 153%;
-    background-position: right calc(50% - 15px) top 6%, right calc(50% - 240px) top -113px;
+    background-size: 94%, 158%;
+    background-position: right calc(50% - 15px) top 6%, right calc(50% - 245px) top -115px;
     background-clip: border-box;
   }
   .hero__heading {
@@ -152,7 +152,7 @@
 
     font-size: 40px;
     line-height: 47px;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
   }
 
   .hero__description {

@@ -63,10 +63,6 @@
   }
 }
 
-.site-footer__social-icon {
-
-}
-
 .site-footer__heading {
   display: inline-block;
   vertical-align: middle;
@@ -155,7 +151,7 @@
 @media(max-width: $desktop-width) {
   .site-footer {
     &::after {
-      top: 95px;
+      top: 97px;
       left: 0;
     }
 
@@ -166,7 +162,7 @@
       width: 100%;
       height: 1px;
 
-      bottom: 60px;
+      bottom: 63px;
       left: 0;
 
       background-color: $main-color-text;
@@ -175,7 +171,7 @@
   }
 
   .site-footer__wrapper {
-    padding: 17px 20px 17px 25px;
+    padding: 20px 20px 17px 25px;
     margin-bottom: 40px;
     flex-wrap: wrap;
   }
@@ -207,7 +203,11 @@
   }
 
   .site-footer__social-link {
-    margin-right: 20px;
+    margin-right: 19px;
+  }
+
+  .site-footer__heading {
+    margin-bottom: 23px;
   }
 
   .site-footer__menu {
@@ -215,6 +215,7 @@
   }
 
   .site-footer__menu-item {
+    width: 100%;
     margin-right: 0;
   }
 
@@ -223,15 +224,16 @@
   }
 
   .site-footer__copyright-item--move {
-    margin-left: -116px;
+    margin-left: -55px;
     position: absolute;
-    top: 35px;
+    top: 37px;
     left: 50%;
   }
 
   .site-footer__copyright {
-    padding: 0 32px;
+    padding: 0 25px;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -254,7 +256,8 @@
 
   .site-footer__copyright-item--move {
     position: absolute;
-    top: 123px;
+    margin-left: -117px;
+    top: 125px;
     left: 50%;
   }
 
@@ -359,6 +362,7 @@
   }
 
   .site-footer__copyright-item {
+    margin-right: 0;
     margin-bottom: 20px;
   }
 }

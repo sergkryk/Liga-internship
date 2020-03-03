@@ -99,15 +99,17 @@
 .feedback__checkbox-indicator {
   position: absolute;
 
+  fill: transparent;
+
   width: 16px;
   height: 16px;
 
   top: 0;
   left: 6px;
+}
 
-  background-image: url(../img/checkbox-empty.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.feedback__checkbox-indicator--checked {
+  display: none;
 }
 
 .feedback__checkbox {
@@ -115,8 +117,8 @@
   left: -99999px;
 }
 
-.feedback__checkbox:checked + .feedback__checkbox-indicator {
-    background-image: url("../img/checkbox-checked.svg");
+.feedback__checkbox:checked + .feedback__checkbox-indicator--checked {
+    display: block;
 }
 
 @media(max-width: $desktop-width) {
@@ -125,13 +127,14 @@
   }
 
   .feedback__wrapper {
-    padding: 77px 87px 61px 94px;
+    padding: 77px 85px 101px 94px;
     align-items: flex-start;
 
     background-image: none;
   }
 
   .feedback__heading {
+    width: 100%;
     margin: 0 0 15px -5px;
 
     font-size: 32px;
@@ -139,23 +142,22 @@
   }
 
   .feedback__text {
+    width: 100%;
     margin: 0 0 55px 0;
   }
 
-  .feedback__list {
-    margin-right: 0;
-
-    max-width: 100%;
+  .feedback__form {
+    width: 100%;
   }
 
-  .feedback__item--textarea {
+  .feedback__textarea-label {
     margin-bottom: 46px;
   }
 }
 
 @media(max-width: $tablet-width) {
   .feedback__wrapper {
-    padding: 29px 15px 11px;
+    padding: 29px 15px 41px;
   }
 
   .feedback__heading {
@@ -166,15 +168,25 @@
   }
 
   .feedback__text {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
   }
 
-  .feedback__item {
+  .feedback__input-label {
     margin-bottom: 30px;
     flex: 0 0 100%;
   }
 
-  .feedback__item--textarea {
+  .feedback__button {
+    margin-bottom: 32px;
+    flex: 0 0 100%;
+  }
+
+  .feedback__checkbox-label {
+    padding-left: 35px;
+    flex: 0 0 100%;
+  }
+
+  .feedback__textarea-label {
     margin-bottom: 26px;
   }
 
@@ -186,12 +198,8 @@
     padding: 16px 17px 18px;
   }
 
-  .feedback__item--checkbox {
-    padding: 0 18px 0 34px;
-  }
-
   .feedback__checkbox-indicator {
-    top: 3px;
+    top: 0;
     left: 0;
   }
 }

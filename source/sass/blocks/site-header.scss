@@ -93,10 +93,10 @@
 @media (max-width: $desktop-width) {
 
   .site-header__wrapper {
-    padding: 10px 12.5px 0px;
+    padding: 10px 12.5px 5px;
   }
   .site-header__logo {
-    padding-bottom: 0;
+    padding-top: 10px;
     width: 222px;
     margin-right: auto;
   }
@@ -116,6 +116,7 @@
   .site-header__icon{
     margin: 0;
     width: 25px;
+    height: 25px;
   }
 
   .site-header__link-text {
@@ -149,7 +150,7 @@
 
 @media (max-width: $tablet-width) {
   .site-header__wrapper {
-    padding: 4px 5px 4px 13px;
+    padding: 4px 9px 4px 13px;
   }
 
   .site-header__logo {
@@ -159,7 +160,7 @@
   }
 
   .site-header__link {
-    padding: 20px 10px 15px;
+    padding: 18px 10px 15px;
   }
 
   .site-header__menu {
@@ -175,6 +176,11 @@
       top: 33px;
       left: 3px;
     }
+  }
+
+  .site-header__icon {
+    width: 24px;
+    height: 24px;
   }
 
 

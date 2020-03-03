@@ -81,13 +81,9 @@
 }
 
 @media (max-width: $desktop-width) {
-  .proposals {
-    padding-top: 50px;
-    padding-bottom: 35px;
-  }
 
   .proposals__wrapper {
-    padding: 0 27px 0 25px;
+    padding: 50px 26px 33px 25px;
   }
 
   .proposals__heading {
@@ -102,13 +98,11 @@
     flex-wrap: nowrap;
   }
 
-  .proposals__item {
-    margin-bottom: 45px;
-    flex: 0 0 100%;
-  }
-
   .proposals__card {
+    margin-bottom: 46px;
     padding: 40px 480px 156px 45px;
+
+    flex: 0 0 100%;
 
     background-size: cover;
   }
@@ -142,7 +136,7 @@
 @media(max-width: $tablet-width) {
 
   .proposals__wrapper {
-    padding: 0 15px;
+    padding: 50px 15px 33px;
   }
 
   .proposals__heading {
@@ -152,11 +146,8 @@
     line-height: 39px;
   }
 
-  .proposals__item {
-    margin-bottom: 30px;
-  }
-
   .proposals__card {
+    margin-bottom: 30px;
     padding: 21px 63px 173px 35px;
     min-width: 290px;
     min-height: 256px;
@@ -177,6 +168,7 @@
     }
   }
   .proposals__card--equipment {
+    padding: 31px 83px 163px 35px;
     background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-mobile-1x.jpg);
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-mobile-2x.jpg);
