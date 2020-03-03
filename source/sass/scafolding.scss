@@ -26,6 +26,10 @@ img {
   height: auto;
 }
 
+.blocked-scrolling {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
