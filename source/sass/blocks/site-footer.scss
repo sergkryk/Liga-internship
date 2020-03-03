@@ -50,6 +50,7 @@
 }
 
 .site-footer__social-link {
+  position: relative;
   margin-right: 15px;
   width: 26px;
   height: 26px;
@@ -62,16 +63,8 @@
   }
 }
 
-.site-footer__social-link--vk {
-  background-image: url(../img/icons/vk-logo.svg);
-}
+.site-footer__social-icon {
 
-.site-footer__social-link--fb {
-  background-image: url(../img/icons/fb-logo.svg);
-}
-
-.site-footer__social-link--ok {
-  background-image: url(../img/icons/ok-logo.svg);
 }
 
 .site-footer__heading {
