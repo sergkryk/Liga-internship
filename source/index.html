@@ -114,9 +114,9 @@
     <section class="feedback" id="feedback-section">
       <div class="feedback__wrapper container">
         <h2 class="feedback__heading">Остались вопросы? Задайте их нам!</h2>
-          <p class="feedback__text">
-            Мы проконсультируем Вас бесплатно
-          </p>
+        <p class="feedback__text">
+          Мы проконсультируем Вас бесплатно
+        </p>
         <form class="feedback__form" action="https://echo.htmlacademy.ru" method="GET">
           <label class="feedback__input-label" for="name" aria-label="Поле для ввода имени">
             <input class="feedback__input" id="name" type="text" placeholder="Имя" required="">
@@ -125,13 +125,15 @@
             <input class="feedback__input" id="phone" type="text" placeholder="Телефон" required="">
           </label>
           <label class="feedback__textarea-label" for="user-question" aria-label="Поле для ввода вопроса">
-            <textarea class="feedback__textarea" id="user-question" name="question" cols="30" rows="7" placeholder="Ваш вопрос"></textarea>
+            <textarea class="feedback__textarea" id="user-question" name="question" cols="30" rows="7"
+              placeholder="Ваш вопрос"></textarea>
           </label>
           <button class="feedback__button button" type="submit">задать вопрос</button>
-          <label class="feedback__checkbox-label" for="agree" aria-label="Подтверждение согласия на обработку персональных данных">Я согласен на обработку персональных данных
+          <label class="feedback__checkbox-label" for="agree"
+            aria-label="Подтверждение согласия на обработку персональных данных">Я согласен на обработку персональных
+            данных
             <input class="feedback__checkbox" type="checkbox" name="agree" id="agree">
             <span class="feedback__checkbox-indicator"></span>
-            <!-- <label class="feedback__checkbox-label" for="agree">Я согласен на обработку персональных данных</label> -->
           </label>
         </form>
       </div>
@@ -140,9 +142,9 @@
   <footer class="site-footer">
     <div class="site-footer__wrapper container">
       <div class="site-footer__container site-footer__container--social">
-        <div class="site-footer__logo">
+        <a href="#" class="site-footer__logo" aria-label="Главная страница компании">
           <img src="img/icons/logo-full.svg" width="211" alt="Логотип компании">
-        </div>
+        </a>
         <ul class="site-footer__socials">
           <li class="site-footer__social-link site-footer__social-link--fb"><a href="#"
               aria-label="Мы в социальной сети FB"></a></li>
@@ -175,26 +177,18 @@
       <div class="site-footer__container site-footer__container--address">
         <input class="site-footer__toggle" type="radio" id="address" name="footer-toggle">
         <label for="address" class="site-footer__heading site-footer__heading--plus">наш офис</label>
-        <ul class="site-footer__address">
-          <li class="site-footer__address-item">
+        <div class="site-footer__address">
             <p class="site-footer__text">г. Мытищи, Олимпийский проспект, д.10</p>
-          </li>
-          <li class="site-footer__address-item">
             <a href="tel:84955894050" class="site-footer__link" aria-label="Позвонить нам">+7 (495) 589-40-50</a>
-          </li>
-          <li class="site-footer__address-item">
             <a href="tel:84955894050" class="site-footer__link" aria-label="Позвонить нам">+7 (925) 003-87-67</a>
-          </li>
-          <li class="site-footer__address-item">
             <a href="tel:84955894050" class="site-footer__link" aria-label="Позвонить нам">+7 (926) 926-080-79</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </div>
     <ul class="site-footer__copyright container">
       <li class="site-footer__copyright-item site-footer__copyright-item--hide">Все права защищены</li>
       <li class="site-footer__copyright-item site-footer__copyright-item--move">1999-2018 SD Service Devices</li>
-      <li class="site-footer__copyright-item">Условия конфиденциальности</li>
+      <li class="site-footer__copyright-item site-footer__copyright-item--conditions">Условия конфиденциальности</li>
       <li class="site-footer__copyright-item">Developed by wow studio </li>
     </ul>
   </footer>
