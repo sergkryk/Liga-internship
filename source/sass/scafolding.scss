@@ -32,7 +32,9 @@ button {
   outline: none;
 }
 
-input:not([type="radio"]):not([type="checkbox"]) {
+input:not([type="radio"]):not([type="checkbox"]),
+textarea,
+button {
   -webkit-appearance: none;
   border-radius: 0;
 }
