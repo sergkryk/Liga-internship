@@ -46,13 +46,14 @@
   }
 
   &:hover .advantages__icon {
-    stroke: #ffffff;
+    fill: #ffffff;
   }
 
 }
 
 .advantages__icon {
   position: absolute;
+  fill: $main-blue-color;
   top: 42px;
   left: 45px;
 }

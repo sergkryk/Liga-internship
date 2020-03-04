@@ -17,6 +17,7 @@
     opacity: 0.2;
   }
 }
+
 .site-footer__wrapper {
   padding: 66px 10px 72px 100px;
 
@@ -61,6 +62,14 @@
   }
 }
 
+.site-footer__social-icon {
+  fill: #CDCDCD;
+
+  &:hover {
+    fill: rgb(46, 92, 170);
+  }
+}
+
 .site-footer__heading {
   display: inline-block;
   vertical-align: middle;
@@ -100,6 +109,10 @@
   line-height: 25px;
   color: #1B2D37;
   opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .site-footer__text {
