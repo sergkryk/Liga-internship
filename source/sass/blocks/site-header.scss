@@ -39,9 +39,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-.site-header__link-text {
   white-space: nowrap;
 }
 
@@ -104,6 +101,7 @@
   .site-header__link {
     display: inline-block;
     vertical-align: middle;
+    font-size: 0;
 
     margin-right: 0px;
     padding: 20px 15px 15px;
@@ -117,10 +115,6 @@
     margin: 0;
     width: 25px;
     height: 25px;
-  }
-
-  .site-header__link-text {
-    display: none;
   }
 
   .site-header__button {
