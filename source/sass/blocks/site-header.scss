@@ -1,21 +1,9 @@
 .site-header {
-  position: relative;
-
-  &::after {
-    content: "";
-    z-index: -10;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background-color: $main-color-background;
-    background-image: url(../img/bcg-mask-1x.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+  background-color: $main-color-background;
+  background-image: url("../img/bcg-mask-1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .site-header__wrapper {
@@ -88,10 +76,10 @@
 }
 
 @media (max-width: $desktop-width) {
-
   .site-header__wrapper {
     padding: 10px 12.5px 5px;
   }
+
   .site-header__logo {
     padding-top: 10px;
     width: 222px;
@@ -103,7 +91,7 @@
     vertical-align: middle;
     font-size: 0;
 
-    margin-right: 0px;
+    margin-right: 0;
     padding: 20px 15px 15px;
   }
 
@@ -111,7 +99,7 @@
     margin-right: 0;
   }
 
-  .site-header__icon{
+  .site-header__icon {
     margin: 0;
     width: 25px;
     height: 25px;
@@ -176,6 +164,4 @@
     width: 24px;
     height: 24px;
   }
-
-
 }

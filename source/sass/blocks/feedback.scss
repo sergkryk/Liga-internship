@@ -10,13 +10,13 @@
   flex-direction: column;
   align-items: flex-end;
 
-  background-image: url(../img/paper-airplane-1x.png), url(../img/triangle-double.svg);
+  background-image: url("../img/paper-airplane-1x.png"), url("../img/triangle-double.svg");
   background-repeat: no-repeat;
   background-position: left calc(50% - 200px) top calc(50% - 30px), left calc(50% - 240px) top calc(50% - 76px);
   background-size: 32%, 42%;
 
-  @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
-    background-image: url(../img/paper-airplane-2x.png), url(../img/triangle-double.svg);
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/paper-airplane-2x.png"), url("../img/triangle-double.svg");
     background-size: 32%, 42%;
   }
 }
@@ -29,10 +29,9 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   width: 49.2%;
-
 }
 
 .feedback__text {
@@ -42,7 +41,7 @@
 
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .feedback__form {
@@ -88,7 +87,7 @@
 .feedback__textarea::placeholder {
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .feedback__button {
@@ -107,7 +106,6 @@
 }
 
 .feedback__checkbox-label--popup {
-
   &::after {
     content: "Необходимо подтвердить согласие на обработку персональных данных";
 
@@ -142,15 +140,21 @@
 
 .feedback__checkbox {
   position: absolute;
-  left: -99999px;
+
+  width: 16px;
+  height: 16px;
+  left: 6px;
+  top: 0;
+
+  opacity: 0;
 }
 
 .feedback__checkbox:checked + .feedback__checkbox-indicator--checked {
-    display: block;
+  display: block;
 }
 
 
-@media(max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .feedback {
     padding: 0;
   }
@@ -184,7 +188,7 @@
   }
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .feedback__wrapper {
     padding: 29px 15px 41px;
   }
@@ -227,23 +231,28 @@
     padding: 16px 17px 18px;
   }
 
+  .feedback__checkbox {
+    left: 0;
+    top: 0;
+  }
+
   .feedback__checkbox-indicator {
     top: 0;
     left: 0;
   }
 }
 
-@media(min-width: 1150px) {
+@media (min-width: 1150px) {
   .feedback__wrapper {
     background-position: left calc(50% - 350px) top calc(50% - 30px), left calc(50% - 440px) top calc(50% - 76px);
 
-    @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-size: 32%, 42%;
     }
   }
 }
 
-@media(min-width: 1400px) {
+@media (min-width: 1400px) {
   .feedback__wrapper {
     padding-left: 221px;
     padding-right: 207px;

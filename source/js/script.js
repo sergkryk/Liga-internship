@@ -10,10 +10,7 @@ var phone = popup.querySelector('[name=user-phone]');
 var question = popup.querySelector('[name=user-question]');
 var loginStorage = localStorage.getItem('login');
 var phoneStorage = localStorage.getItem('phone');
-var checkboxFooter = document.querySelector('.feedback__checkbox');
-var checkboxFooterLabel = document.querySelector('.feedback__checkbox-label');
-var checkboxPopup = document.querySelector('.call-request__checkbox');
-var checkboxPopupLabel = document.querySelector('.call-request__checkbox-label');
+
 
 var footerForm = document.querySelector('.feedback__form');
 var footerPhone = footerForm.querySelector('[name=footer-phone]');
@@ -21,7 +18,6 @@ var footerPhone = footerForm.querySelector('[name=footer-phone]');
 var closeModal = function () {
   popup.classList.add('call-request--hidden');
   siteBody.classList.remove('blocked-scrolling');
-  removePopupElementClass();
 };
 
 var onEscPressRemove = function (evt) {
@@ -94,26 +90,6 @@ footerPhone.addEventListener('focus', function () {
   }
 });
 
-var im = new Inputmask('+9 (999) 999-99-99');
-im.mask(footerPhone);
-im.mask(phone);
-
-var removeFeedbackElementClass = function () {
-  checkboxFooterLabel.classList.remove('feedback__checkbox-label--popup');
-  checkboxFooter.removeEventListener('change', removeFeedbackElementClass);
-};
-
-checkboxFooter.addEventListener('invalid', function () {
-  checkboxFooterLabel.classList.add('feedback__checkbox-label--popup');
-  checkboxFooter.addEventListener('change', removeFeedbackElementClass);
-});
-
-var removePopupElementClass = function () {
-  checkboxPopupLabel.classList.remove('call-request__checkbox-label--popup');
-  checkboxPopup.removeEventListener('change', removePopupElementClass);
-};
-
-checkboxPopup.addEventListener('invalid', function () {
-  checkboxPopupLabel.classList.add('call-request__checkbox-label--popup');
-  checkboxPopup.addEventListener('change', removePopupElementClass);
-});
+var im = new window.Inputmask('+9 (999) 999-99-99');
+im.mask(document.querySelector('[name=user-phone]'));
+im.mask(document.querySelector('[name=footer-phone]'));

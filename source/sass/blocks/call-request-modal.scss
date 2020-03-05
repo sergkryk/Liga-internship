@@ -1,15 +1,15 @@
 .call-request {
-    position: fixed;
-    padding-top: 113px;
-    overflow: scroll;
+  position: fixed;
+  padding-top: 113px;
+  overflow: scroll;
 
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-    left: 0;
-    top: 0;
+  left: 0;
+  top: 0;
 
-    background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .call-request--hidden {
@@ -81,7 +81,7 @@
   line-height: 39px;
   font-family: $secondary-fonts;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .call-request__text {
@@ -92,7 +92,7 @@
 
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .call-request__form {
@@ -132,7 +132,6 @@
 }
 
 .call-request__checkbox-label--popup {
-
   &::after {
     content: "Необходимо подтвердить согласие на обработку персональных данных";
 
@@ -155,7 +154,7 @@
 }
 
 .call-request__input,
-.call-request__textarea  {
+.call-request__textarea {
   padding: 15px 15px 20px 25px;
 
   width: 100%;
@@ -168,7 +167,7 @@
 .call-request__textarea::placeholder {
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .call-request__input:invalid:not(:placeholder-shown) {

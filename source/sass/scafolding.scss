@@ -8,7 +8,7 @@ body {
   font-weight: $main-font-weight;
   color: $main-color-text;
 
-  background-color: $main-color-background;
+  background-color: #ffffff;
 }
 
 a {
@@ -31,7 +31,7 @@ button {
 input:not([type="radio"]):not([type="checkbox"]),
 textarea,
 button {
-  -webkit-appearance: none;
+  appearance: none;
   border-radius: 0;
 }
 

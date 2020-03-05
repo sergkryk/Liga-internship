@@ -49,7 +49,7 @@
 }
 
 .site-footer__social-icon {
-  fill: #CDCDCD;
+  fill: #cdcdcd;
 
   &:hover {
     fill: rgb(46, 92, 170);
@@ -93,7 +93,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
 
   &:hover {
@@ -106,13 +106,13 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
 }
 
 .site-footer__border-container {
   width: 100%;
-  border-top: 1px solid rgba(102,102,102,0.2);
+  border-top: 1px solid rgba(102, 102, 102, 0.2);
 }
 
 .site-footer__copyright {
@@ -130,7 +130,7 @@
   line-height: 24px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #1B2D37;
+  color: #1b2d37;
 
   white-space: nowrap;
   opacity: 0.5;
@@ -153,9 +153,8 @@
   left: -9999px;
 }
 
-@media(max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .site-footer {
-
     &::before {
       content: "";
 
@@ -231,15 +230,14 @@
   }
 
   .site-footer__copyright {
-    padding: 22px 25px 20px;
+    padding: 22px 25px 25px;
     justify-content: space-between;
     align-items: center;
   }
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .site-footer {
-
     &::before {
       width: 0;
     }
@@ -269,7 +267,7 @@
 
   .site-footer__container--menu,
   .site-footer__container--address {
-    border-top: 1px solid rgba(102,102,102,0.2);
+    border-top: 1px solid rgba(102, 102, 102, 0.2);
   }
 
   .site-footer__container--social {
@@ -318,7 +316,7 @@
       width: 16px;
       height: 1px;
 
-      background-color: rgba(102,102,102,0.2);
+      background-color: rgba(102, 102, 102, 0.2);
     }
 
     &::before {
@@ -333,14 +331,13 @@
       width: 16px;
       height: 1px;
 
-      background-color: rgba(102,102,102,0.2);
+      background-color: rgba(102, 102, 102, 0.2);
 
       transform: rotate(90deg);
     }
   }
 
   .site-footer__toggle:checked + .site-footer__heading--plus {
-
     &::before {
       width: 0;
     }
@@ -350,7 +347,7 @@
     display: block;
   }
 
-  .site-footer__toggle:checked  ~ .site-footer__address {
+  .site-footer__toggle:checked ~ .site-footer__address {
     display: block;
   }
 
@@ -366,7 +363,7 @@
   }
 }
 
-@media(min-width: 1300px) {
+@media (min-width: 1300px) {
   .site-footer__menu {
     max-height: 115px;
   }

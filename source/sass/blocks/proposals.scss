@@ -14,7 +14,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .proposals__list {
@@ -36,7 +36,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   &::after {
     content: ">";
@@ -61,29 +61,33 @@
 }
 
 .proposals__card--production {
-  background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/production-1x.jpg);
+  background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-1x.jpg");
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/production-2x.jpg);
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-2x.jpg");
     background-size: cover;
   }
 }
+
 .proposals__card--installing {
-  background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/installing-1x.jpg);
+  background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-1x.jpg");
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/installing-2x.jpg);
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-2x.jpg");
     background-size: cover;
   }
 }
+
 .proposals__card--equipment {
-  background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-1x.jpg);
+  background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-1x.jpg");
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-2x.jpg);
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-2x.jpg");
     background-size: cover;
   }
 }
 
 @media (max-width: $desktop-width) {
-
   .proposals__wrapper {
     padding: 50px 26px 33px 25px;
   }
@@ -103,7 +107,7 @@
   .proposals__card {
     margin-bottom: 46px;
     margin-right: 0;
-    padding: 40px 480px 156px 45px;
+    padding: 40px 500px 156px 45px;
 
     flex: 0 0 100%;
 
@@ -111,33 +115,37 @@
   }
 
   .proposals__card--production {
-    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/production-tablet-1x.jpg);
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-tablet-1x.jpg");
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/production-tablet-2x.jpg);
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-tablet-2x.jpg");
       background-size: cover;
     }
   }
+
   .proposals__card--installing {
-    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/installing-tablet-1x.jpg);
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-tablet-1x.jpg");
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/installing-tablet-2x.jpg);
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-tablet-2x.jpg");
       background-size: cover;
     }
   }
+
   .proposals__card--equipment {
     padding-top: 50px;
-    padding-right: 500px;
+    padding-right: 510px;
     padding-bottom: 147px;
-    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-tablet-1x.jpg);
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-tablet-1x.jpg");
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-tablet-2x.jpg);
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-tablet-2x.jpg");
       background-size: cover;
     }
   }
 }
 
-@media(max-width: $tablet-width) {
-
+@media (max-width: $tablet-width) {
   .proposals__wrapper {
     padding: 50px 15px 33px;
   }
@@ -157,30 +165,35 @@
   }
 
   .proposals__card--production {
-    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/production-mobile-1x.jpg);
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-mobile-1x.jpg");
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/production-mobile-2x.jpg);
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-mobile-2x.jpg");
       background-size: cover;
     }
   }
+
   .proposals__card--installing {
-    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/installing-mobile-1x.jpg);
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-mobile-1x.jpg");
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/installing-mobile-2x.jpg);
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-mobile-2x.jpg");
       background-size: cover;
     }
   }
+
   .proposals__card--equipment {
     padding: 31px 83px 163px 35px;
-    background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-mobile-1x.jpg);
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-mobile-1x.jpg");
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: linear-gradient(rgba(27,45,55,0.8), rgba(27,45,55,0.8)), url(../img/equipments-mobile-2x.jpg);
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-mobile-2x.jpg");
       background-size: cover;
     }
   }
 }
 
-@media(min-width: 1400px) {
+@media (min-width: 1400px) {
   .proposals__wrapper {
     padding-left: 222px;
     padding-right: 200px;
