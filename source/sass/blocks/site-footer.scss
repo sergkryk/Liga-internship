@@ -1,21 +1,7 @@
 .site-footer {
   position: relative;
-  // padding-bottom: 20px;
 
   background-color: #ffffff;
-  // &::after {
-  //   content: "";
-
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 1px;
-
-  //   bottom: 60px;
-  //   left: 0;
-
-  //   background-color: $main-color-text;
-  //   opacity: 0.2;
-  // }
 }
 
 .site-footer__wrapper {
@@ -124,14 +110,17 @@
   opacity: 0.5;
 }
 
+.site-footer__border-container {
+  width: 100%;
+  border-top: 1px solid rgba(102,102,102,0.2);
+}
+
 .site-footer__copyright {
   @include reset-list;
   margin: 0 auto;
   padding: 17px 20px 20px 100px;
 
   display: flex;
-
-  border-top: 1px solid rgba(102,102,102,0.2);
 }
 
 .site-footer__copyright-item {
