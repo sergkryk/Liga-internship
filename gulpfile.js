@@ -87,6 +87,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "!source/img/icon-*.svg",
+    "source/js/*.js",
     "source//*.ico"
     ], {
       base: "source"
@@ -98,12 +99,12 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("scripts", function() {
-  return gulp.src("source/js/*.js")
-    .pipe(concat("all.js"))
-    .pipe(gulp.dest("build/js"));
-});
+// gulp.task("scripts", function() {
+//   return gulp.src("source/js/*.js")
+//     .pipe(concat("all.js"))
+//     .pipe(gulp.dest("build/js"));
+// });
 
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "scripts"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

@@ -150,7 +150,13 @@
 
 .call-request__checkbox {
   position: absolute;
-  left: -99999px;
+
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 3px;
+
+  opacity: 0;
 }
 
 .call-request__input,

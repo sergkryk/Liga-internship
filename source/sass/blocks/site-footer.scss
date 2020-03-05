@@ -84,11 +84,12 @@
 }
 
 .site-footer__menu-item {
-  width: 45%;
+  width: calc(calc(100% - 40px) / 2);
+  padding-right: 10px;
 
-  &:nth-child(odd) {
-    margin-right: 12px;
-  }
+  // &:nth-child(odd) {
+  //   margin-right: 10px;
+  // }
 }
 
 .site-footer__link {
@@ -374,5 +375,29 @@
     &:last-child {
       margin-left: 0;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-footer__menu-item--about {
+    order: 1;
+  }
+  .site-footer__menu-item--products {
+    order: 3;
+  }
+  .site-footer__menu-item--producing {
+    order: 5;
+  }
+  .site-footer__menu-item--installing {
+    order: 7;
+  }
+  .site-footer__menu-item--equipment {
+    order: 2;
+  }
+  .site-footer__menu-item--delivery {
+    order: 4;
+  }
+  .site-footer__menu-item--contacts {
+    order: 6;
   }
 }
