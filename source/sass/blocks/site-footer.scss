@@ -137,16 +137,19 @@
 
   &:last-child {
     margin-right: 0;
+    margin-left: auto;
+    @media (min-width: 1920px) {
+      margin-left: 22.4%;
+    }
   }
 }
 
 .site-footer__copyright-item--move {
-  margin-right: 9.6%;
+  @media (min-width: 1920px) {
+    margin-right: 9.6%;
+  }
 }
 
-.site-footer__copyright-item--conditions {
-  margin-right: 27.5%;
-}
 
 .site-footer__toggle {
   position: absolute;
