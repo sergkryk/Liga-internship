@@ -1,5 +1,10 @@
 'use strict';
 (function () {
+  var smoothScroll = new SmoothScroll('a[href*="#"]');
+})();
+
+'use strict';
+(function () {
   var siteBody = document.querySelector('body');
   var callRequestButton = document.querySelector('.site-header__button');
   var popup = document.querySelector('.call-request');

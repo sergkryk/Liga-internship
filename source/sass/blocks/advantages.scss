@@ -140,7 +140,7 @@
   .advantages__card {
     padding: 66px 20px 19px 25px;
     margin-bottom: 29px;
-    flex-basis: 48%;
+    width: calc((100% - 30px) / 2);
     min-height: 232px;
   }
 
@@ -209,7 +209,7 @@
     padding: 72px 10px 22px 25px;
     margin-right: 0;
     margin-bottom: 20px;
-    flex-basis: 100%;
+    width: 100%;
   }
 
   .advantages__card:nth-child(odd) {
