@@ -7,6 +7,7 @@
 
 .advantages__container {
   padding: 112px 40px 20px;
+  width: 100%;
 
   display: flex;
   flex-wrap: wrap;
@@ -27,14 +28,17 @@
 
   min-height: 299px;
 
-  flex: 0 0 48.5%;
+  width: calc(calc(100% - 30px) / 2);
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    width: 570px;
+    }
 
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-left: 2px solid $main-blue-color;
 
   &:nth-child(odd) {
-    margin-right: 28px;
+    margin-right: 30px;
   }
 
   &:hover {
@@ -276,6 +280,6 @@
   .advantages__container,
   .advantages__about {
     padding-left: 221px;
-    padding-right: 200px;
+    padding-right: 209px;
   }
 }

@@ -21,6 +21,7 @@
   width: 100%;
 
   display: flex;
+  flex-wrap: wrap;
 }
 
 .proposals__card {
@@ -30,6 +31,9 @@
   margin-right: 30px;
 
   width: calc(calc(100% - 60px) / 3);
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    width: 370px;
+    }
 
   font-family: $secondary-fonts;
   font-weight: 400;
@@ -37,8 +41,10 @@
   line-height: 30px;
   color: #ffffff;
 
+  background-repeat: no-repeat;
+
   &::after {
-    content: ">";
+    content: "";
 
     position: absolute;
     width: 63px;
@@ -52,6 +58,9 @@
     align-items: center;
 
     background-color: $main-blue-color;
+    background-image: url("../img/arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   &:nth-child(3n) {

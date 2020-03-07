@@ -85,11 +85,10 @@
 
 .site-footer__menu-item {
   width: calc(calc(100% - 40px) / 2);
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    width: 299px;
+  }
   padding-right: 10px;
-
-  // &:nth-child(odd) {
-  //   margin-right: 10px;
-  // }
 }
 
 .site-footer__link {
