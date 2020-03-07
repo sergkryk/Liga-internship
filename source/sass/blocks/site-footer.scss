@@ -84,10 +84,7 @@
 }
 
 .site-footer__menu-item {
-  width: calc(calc(100% - 40px) / 2);
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    width: 299px;
-  }
+  width: calc((100% - 40px) / 2);
   padding-right: 10px;
 }
 

@@ -645,6 +645,6 @@
 
 	};
 
-	return SmoothScroll;
+	return new SmoothScroll('a[href*="#"]');
 
 }));
