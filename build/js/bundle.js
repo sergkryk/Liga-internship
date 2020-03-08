@@ -2863,7 +2863,6 @@ window.Element&&!Element.prototype.closest&&(Element.prototype.closest=function(
 });
 },{}],5:[function(require,module,exports){
 /* eslint-disable */
-'use strict';
 var Inputmask = require('inputmask');
 var SmoothScroll = require('smooth-scroll');
 var svg4everybody = require('svg4everybody');

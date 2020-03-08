@@ -1,5 +1,4 @@
 /* eslint-disable */
-'use strict';
 var Inputmask = require('inputmask');
 var SmoothScroll = require('smooth-scroll');
 var svg4everybody = require('svg4everybody');
