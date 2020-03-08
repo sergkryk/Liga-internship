@@ -16,6 +16,15 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var concat = require('gulp-concat');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+
+gulp.task('browserify', function () {
+  return browserify('source/js/browserify/main.js')
+      .bundle()
+      .pipe(source('bundle.js'))
+      .pipe(gulp.dest('build/js'));
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -87,7 +96,6 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "!source/img/icon-*.svg",
-    // "source/js/*.js",
     "source//*.ico"
     ], {
       base: "source"
@@ -105,12 +113,5 @@ gulp.task("scripts", function() {
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("libraries", function() {
-  return gulp.src("source/js/libraries/*.js")
-    .pipe(concat("libraries.js"))
-    .pipe(gulp.dest("build/js"));
-});
-
-
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "scripts", "libraries"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "scripts", "browserify"));
 gulp.task("start", gulp.series("build", "server"));

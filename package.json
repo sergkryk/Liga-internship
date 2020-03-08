@@ -4,26 +4,28 @@
   "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.5.x",
+    "autoprefixer": "9.7.x",
     "browser-sync": "2.26.x",
-    "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x",
+    "browserify": "16.5.0",
+    "eslint": "6.8.0",
+    "eslint-config-htmlacademy": "0.5.x",
     "gulp": "4.0.x",
     "gulp-concat": "^2.6.1",
-    "gulp-csso": "^3.0.1",
-    "gulp-imagemin": "^5.0.3",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.4.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "4.0.x",
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "pixel-glass": "^1.0.13",
-    "posthtml-include": "^1.2.0",
-    "stylelint": "9.10.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "posthtml-include": "^1.4.0",
+    "stylelint": "13.2.x",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "vinyl-source-stream": "2.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -43,7 +45,7 @@
     "*.json",
     "*.js",
     "source/*.html",
-    "source/js/script.js",
+    "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
   ],
@@ -51,7 +53,9 @@
     "node": "8.15"
   },
   "dependencies": {
-    "del": "^4.1.1",
-    "inputmask": "^5.0.3"
+    "del": "^5.1.0",
+    "inputmask": "^5.0.3",
+    "smooth-scroll": "^16.1.2",
+    "svg4everybody": "^2.1.9"
   }
 }
