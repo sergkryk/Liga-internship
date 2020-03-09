@@ -1,5 +1,16 @@
 'use strict';
 (function () {
+  var onInputMaskPhone = function () {
+    var im = new window.InputMask('+9 (999) 999-99-99');
+    im.mask(document.querySelector('[name=user-phone]'));
+    im.mask(document.querySelector('[name=footer-phone]'));
+  };
+
+  onInputMaskPhone();
+})();
+
+'use strict';
+(function () {
   var siteBody = document.querySelector('body');
   var callRequestButton = document.querySelector('.site-header__button');
   var popup = document.querySelector('.call-request');
@@ -87,4 +98,14 @@
       footerPhone.value = countryCode;
     }
   });
+})();
+
+'use strict';
+(function () {
+  var smoothScroll = new window.SmoothScroll('a[href*="#"]');
+})();
+
+'use strict';
+(function () {
+  window.svg4everybody();
 })();
