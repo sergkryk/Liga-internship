@@ -38,7 +38,9 @@
   line-height: 30px;
   color: #ffffff;
 
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #344046;
 
   &::after {
     content: "";
@@ -70,7 +72,6 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-2x.jpg");
-    background-size: cover;
   }
 }
 
@@ -79,7 +80,6 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-2x.jpg");
-    background-size: cover;
   }
 }
 
@@ -88,7 +88,6 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-2x.jpg");
-    background-size: cover;
   }
 }
 
@@ -124,7 +123,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-tablet-2x.jpg");
-      background-size: cover;
     }
   }
 
@@ -133,7 +131,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-tablet-2x.jpg");
-      background-size: cover;
     }
   }
 
@@ -145,7 +142,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-tablet-2x.jpg");
-      background-size: cover;
     }
   }
 }
@@ -174,7 +170,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-mobile-2x.jpg");
-      background-size: cover;
     }
   }
 
@@ -183,7 +178,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-mobile-2x.jpg");
-      background-size: cover;
     }
   }
 
@@ -193,14 +187,13 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-mobile-2x.jpg");
-      background-size: cover;
     }
   }
 }
 
 @media (min-width: 1400px) {
   .proposals__wrapper {
-    padding-left: 222px;
+    padding-left: 214px;
     padding-right: 200px;
   }
 

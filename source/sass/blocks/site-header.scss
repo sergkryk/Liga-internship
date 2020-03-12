@@ -7,13 +7,13 @@
 }
 
 .site-header__wrapper {
-  padding: 10px 20px;
+  padding: 32px 20px 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
   @media (min-width: 1164px) {
-    padding: 10px 90px;
+    padding: 32px 95px 10px 84px;
   }
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -27,14 +27,18 @@
 }
 
 .site-header__link {
-  padding: 15px 22px 15px 28px;
-  margin-right: 29px;
+  padding: 15px 45px 15px 20px;
+  margin-right: 20px;
   color: #ffffff;
 
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   white-space: nowrap;
+}
+
+.site-header__link--phone {
+  padding-right: 30px;
 }
 
 .site-header__icon {
@@ -149,7 +153,11 @@
   }
 
   .site-header__link {
-    padding: 18px 10px 15px;
+    padding: 17px 10px 17px;
+  }
+
+  .site-header__link--phone {
+    padding: 10px 5px 10px 15px;
   }
 
   .site-header__menu {
@@ -157,13 +165,13 @@
     margin-right: 0;
 
     &::before {
-      top: 21px;
-      left: 3px;
+      top: 23px;
+      left: 5px;
     }
 
     &::after {
-      top: 33px;
-      left: 3px;
+      top: 35px;
+      left: 5px;
     }
   }
 

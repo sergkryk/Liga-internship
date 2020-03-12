@@ -2,7 +2,8 @@
   background-color: #ffffff;
   background-image: url("../img/triangle-mask.svg");
   background-repeat: no-repeat;
-  background-position: center top -28px;
+  background-size: 110%;
+  background-position: left -190px top -95px;
 }
 
 .advantages__container {
@@ -33,6 +34,7 @@
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-left: 2px solid $main-blue-color;
+  cursor: pointer;
 
   &:nth-child(odd) {
     margin-right: 30px;
@@ -276,7 +278,7 @@
 @media (min-width: 1400px) {
   .advantages__container,
   .advantages__about {
-    padding-left: 221px;
+    padding-left: 214px;
     padding-right: 209px;
   }
 }
